@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Digest — BigQuery Release Notes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-info">
+                <h1>Cloud Digest</h1>
+                <p class="subtitle">BigQuery Release Notes</p>
+            </div>
+            
+            <div class="toolbar">
+                <button id="refresh-btn" class="btn btn-secondary" aria-label="Refresh updates">
+                    <svg class="icon icon-refresh" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 4v6h-6"></path>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                    </svg>
+                    <span>Refresh Updates</span>
+                </button>
+                
+                <div id="loading-spinner" class="spinner hidden" role="status" aria-label="Loading"></div>
+                
+                <button id="share-btn" class="btn btn-primary" disabled aria-label="Share selected update on X">
+                    <svg class="icon icon-x" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>Share on X</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="feed-main">
+            <div id="releases-feed" class="releases-feed">
+                <!-- Release cards will be rendered dynamically by JavaScript -->
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Source feed: <a href="https://docs.cloud.google.com/feeds/bigquery-release-notes.xml" target="_blank" rel="noopener noreferrer">Google Cloud BigQuery Release Notes</a></p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
