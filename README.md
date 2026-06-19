@@ -10,6 +10,20 @@ Cloud Digest is a minimal, modern, editorial-style cloud update reader for Googl
 
 ---
 
+## Screenshots
+
+### Home Feed View
+![Home Feed View](assets/home.png)
+
+### Refreshing Feed State
+![Refreshing Feed State](assets/refresh.png)
+
+### Selected Card State
+![Selected Card State](assets/selected.png)
+
+---
+
+
 ## Tech Stack
 - **Backend**: Python Flask
 - **Frontend**: Vanilla HTML, CSS, JavaScript (no external libraries or frameworks)
