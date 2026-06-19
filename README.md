@@ -2,6 +2,8 @@
 
 Cloud Digest is a minimal, modern, editorial-style cloud update reader for Google Cloud BigQuery Release Notes.
 
+This project was developed as part of the Kaggle 5-Day AI Agents: Intensive Vibe Coding Course With Google.
+
 ## Features
 - **Feed Viewer**: Fetches and parses the official BigQuery release notes XML feed dynamically.
 - **Minimal Editorial Design**: Follows a clean, SaaS-style Notion/Google Cloud Docs-inspired theme in a soft sage-gray/slate color scheme.
